@@ -1,3 +1,3 @@
 # my-portfolio
 
-![demoPortfolio](imagem/marcos-portfolio.png)
+![demoPortfolio](imagem/mockup-demo.png)
