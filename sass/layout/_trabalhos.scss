@@ -1,0 +1,76 @@
+ /* FEEDBACKS*/
+ .trabalhos {
+    width: 100%;
+    padding: 2.5rem;
+    background-color: #000;
+    color:#fff;
+
+    @media screen and (min-width: 450px) {
+        padding: 8rem;
+    } 
+
+    @media screen and (min-width: 600px) {
+        padding: 10rem;
+    } 
+
+    @media screen and (min-width: 680px) {
+        padding: 4rem 18rem;
+    } 
+
+    @media screen and (min-width: 820px) {
+        padding: 4rem;
+    } 
+
+    @media screen and (min-width: 1300px) {
+        padding: 4rem 20rem;
+    } 
+
+    .container {
+        @media screen and (min-width: 820px) {
+            display: flex;
+            padding: 1rem;
+        } 
+    }
+    
+    &__conteudo {
+        margin-top: 4rem;
+        background-color: #e0e0e0;
+
+        @media screen and (min-width: 820px) {
+           margin: 5rem;
+        } 
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &--texto {
+            padding: 2rem;
+            color: #000;
+
+            h3 {
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+
+        &--botao {
+            margin: 2rem;
+            display: flex;
+            justify-content: center;
+            
+            a {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                cursor: pointer;
+                border: none;
+                padding: 1rem 5rem;
+                background-color: #61693a;
+                color: #ffffff;
+            }
+        }
+
+      
+    }
+}

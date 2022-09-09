@@ -1,0 +1,28 @@
+.rodape {
+    width: 100%;
+    background-color: #484d2e;
+    height: 20vh;
+    color: #fff;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        font-size: 1.5rem;
+        text-align: center;
+
+        @media screen and (min-width: 400px) {
+            font-size: 2rem;
+        }  
+    }
+    p {
+        margin-top: 1rem;
+        font-size: 1rem;
+
+        @media screen and (min-width: 400px) {
+            font-size: 1.2rem;
+        }  
+    }
+}

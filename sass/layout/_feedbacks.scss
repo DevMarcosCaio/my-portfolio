@@ -1,0 +1,115 @@
+    /* FEEDBACKS*/
+    .feedbacks {
+        width: 100%;
+        padding: 2.5rem;
+        background-color: #000;
+        color:#fff; 
+        @media screen and (min-width: 450px) {
+            padding: 1rem 10rem;
+        }  
+
+        @media screen and (min-width: 600px) {
+            padding: 1rem 12rem;
+        } 
+
+        @media screen and (min-width: 680px) {
+            padding: 1rem 18rem;
+        } 
+
+        @media screen and (min-width: 820px) {
+            padding: 1rem;
+        } 
+
+        @media screen and (min-width: 1020px) {
+            padding: 1rem 10rem;
+        } 
+
+        @media screen and (min-width: 1200px) {
+            padding: 1rem 5rem;
+        } 
+
+        @media screen and (min-width: 1300px) {
+            padding: 4rem 15rem;
+        } 
+
+        @media screen and (min-width: 1400px) {
+            padding: 4rem 20rem;
+        } 
+
+        @media screen and (min-width: 1500px) {
+            padding: 4rem 25rem;
+        } 
+
+        @media screen and (min-width: 1700px) {
+            padding: 4rem 30rem;
+        } 
+
+        .container {
+            @media screen and (min-width: 820px) {
+                display: flex;
+                align-items: center;
+            } 
+        }
+
+        &__texto {
+            display: none;
+            
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            @media screen and (min-width: 820px) {
+                display: block;
+                padding: 5rem;
+                width: 100%;
+            } 
+
+        }
+        // CORPO DO SLIDE
+        &__slider {
+            margin-top: 2rem;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; 
+        }
+        // SLIDE EM SI 
+        &__slidesemsi {
+            width: 1000%;
+            height: 500px;
+            display: flex;
+
+            input {
+                display: none;
+            }
+        }
+        // SLIDE INDIVIDUAL (IMG)
+        &__slide {
+            width: 20%;
+            transition: 2s ease;
+
+            img {
+                width: 50%;
+                height: 100%; 
+            }
+        }
+
+        #radio1:checked ~ .first {
+            margin-left: 0;
+        }
+        #radio2:checked ~ .first {
+            margin-left: -20%;
+        }
+        #radio3:checked ~ .first {
+            margin-left: -40%;
+        }
+        #radio4:checked ~ .first {
+            margin-left: -60%;
+        }
+    }
+   
+

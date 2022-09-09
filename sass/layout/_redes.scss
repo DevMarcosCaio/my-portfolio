@@ -1,0 +1,30 @@
+.redes {
+    width: 100%;
+    background-color: #000;
+    height: auto;
+    color: #fff;
+    padding: 2.5rem;
+
+    @media screen and (min-width: 450px) {
+        padding: 8rem;
+    } 
+
+    @media screen and (min-width: 600px) {
+        padding: 10rem;
+    } 
+
+    @media screen and (min-width: 680px) {
+        padding: 4rem 18rem;
+    } 
+    .redes-sociais {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+
+        img {
+            margin: 1rem;
+            max-width: 60%;
+            height: auto;
+        }     
+    }
+}

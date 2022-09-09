@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Portfolio</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <!-- CSS -->
+    <link rel="stylesheet" href="sass/estilo.css">
+    <link rel="shortcut icon" href="imagem/icone.png" type="image/x-icon">
+</head>
+<body>
+<!-- CABECALHO -->
+    <div class="caixa">
+    <header id="inicio" class="hero"> 
+        <!-- BURGUER MENU-->
+        <nav class="hero__nav">
+            <div class="hero__nav--linha1 "></div>
+            <div class="hero__nav--linha2 "></div>
+            <div class="hero__nav--linha3 "></div>
+        </nav>
+        <!-- BURGUER MENU LISTA-->     
+        <div class="hero__navlist">
+            <ul class="hero__navlist--items">
+                <li><a class="link1" href="#inicio">Início</a></li>
+                <li><a class="link2" href="#servicos">Servicos</a></li>
+                <li><a class="link3" href="#habilidades">Habilidades</a></li>
+                <li><a class="link4" href="#trabalhos">Trabalhos</a></li>
+                <li><a class="link5" href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <!-- NAVEGACAO DESKTOP--> 
+        <div class="hero__navdesktop">
+            <ul class="hero__navdesktoplist--items">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Servicos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#trabalhos">Trabalhos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <!-- TEXTO PRINCIPAL-->  
+        <div class="hero__text">
+            <h1>Eu sou o <span>Marcos</span></h1>
+            <h2>Desenvolvedor 
+            Front End e Prestador de serviços digitais</h2>
+        </div>
+        <!-- ARROW ANIMATION BAIXO (MOBILE) -->
+        <div class="setabaixo">
+            <a href="#sobre">
+                <img src="imagem/seta-baixo.png" alt="">
+            </a>
+        </div>
+        <!-- ARROW ANIMATION CIMA (DESKTOP) -->
+         <div class="setacima">
+            <a href="#inicio"><img src="imagem/seta-cima.png" alt=""></a>
+        </div>
+    </header>
+    <main>
+        <section id="sobre" class="sobre">
+        <!-- SOBRE MIM-->     
+            <h2>Há mais de 2 anos no campo de batalha</h2>
+            <p>Acreditando no lema de que precisamos criar nossas próprias oportunidades e estudando de forma autodidata conquistei meus primeiros clientes e comecei a trabalhar de forma autônoma com prestação de serviços digitais. </p>
+            <p>No campo de batalha da vida real construi habilidades variadas que hoje me permitem atuar de forma ampla em vários projetos.</p>
+        </section>
+        <!-- SERVICOS PRESTADOS -->  
+        <section id="servicos" class="servicos"> 
+            <h2>Serviços Prestados</h2>
+             <!-- CARD DESENVOLVIMENTO --> 
+             <div class="container">
+             <div class="servicos__card">
+                <figure class="servicos__desenvolvimento">
+                    <img src="imagem/Desenvolvimento.png" alt="">
+                    <figcaption>Desenvolvimento Front End</figcaption>
+                </figure>
+                <p>Começando pela discussão do design, seguindo para a prototipação (UI DESIGN) com ferramentas como figma e adobe XD, até a conclusão final de websites estáticos e dinâmicos para diversos propósitos, desde um portfolio profissional até o site de uma clínica odontológica. </p>
+            </div>
+            <!-- GESTAO DE TRAFEGO --> 
+            <div class="servicos__card">
+                <figure class="servicos__gestaodetrafego">
+                    <img src="imagem/trafego.png" alt="">
+                    <figcaption>Gestão de tráfego</figcaption>
+                </figure>
+                <p>Desde o mapeamento da jornada do cliente, criação dos criativos e copy, até a criação da campanha (foco em facebook ads), análise de métricas e otimização dos resultados. </p>
+            </div> 
+            <!-- GESTAO DE REDES --> 
+            <div class="servicos__card">
+            <figure class="servicos__gestaoderedes">
+                <img src="imagem/redes.png" alt="">
+                <figcaption>Gestão de redes</figcaption>
+            </figure>
+            <p>Foco em estratégias multicanal, criação de conteúdos, crescimento orgânico, pago e análise de resultados.</p>
+            </div></div>
+        </section>
+        <!-- FEEDBACKS --> 
+        <section class="feedbacks">
+            <h2>Feedbacks</h2>
+            <div class="container">
+            <div class="feedbacks__texto">
+                <h3>ENTENDENDO OS CLIENTES</h3>
+                <p>A maior habilidade que adquiri ao longo do tempo foi saber ouvir o que os clientes precisam e trabalhar em conjunto com cada um deles para chegar ao melhor resultado para a solução de cada problema.</p>
+            </div>
+        <!-- CORPO DO SLIDE --> 
+        <div class="feedbacks__slider">
+            <!-- SLIDES EM SI --> 
+            <div class="feedbacks__slidesemsi">
+                <!-- BOTAO RADIO DE NAVEGACAO --> 
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <!-- IMAGENS --> 
+                <div class=" feedbacks__slide first">
+                     <img src="imagem/feedback1.png" alt="">
+                </div>
+
+                <div class="feedbacks__slide">
+                    <img src="imagem/feedback2.png" alt="">
+                </div>
+
+                <div class="feedbacks__slide">
+                    <img src="imagem/feedback3.png" alt="">
+                </div>
+                
+                <div class="feedbacks__slide">
+                    <img src="imagem/feedback4.png" alt="">
+                </div>
+            <!-- NAVEGACAO AUTOMATICA -->   
+                <div class="feedbacks__navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <!-- NAVEGACAO MANUAL --> 
+            <div class="feedbacks__navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+        </section>
+        <section class="frontend">
+            <h2>Um programador em primeiro lugar</h2>
+          
+            <p>Ao longo do tempo estudando, percebi que para que eu fosse um profissional acima da média precisaria aprender mais do que apenas programar, e assim fui desenvolvendo de forma paralela à programação, habilidades como : UI Design, UX design, Gestão de tráfego e Gestão de redes sociais.</p>
+
+            <p>Entretanto, tenho a programação como meu núcleo e as outras habilidades como um acréscimo com o intuito de ser um profissional completo.</p>
+        </section>
+        <section id="habilidades" class="habilidades">
+            <h2>Habilidades</h2>
+
+            <div class="habilidades__barra">
+                <p class="habilidades__barra--texto">Html / BEM</p>
+                <span ><p class="habilidades__barra--1"></p></span>
+            </div>
+            <div class="habilidades__barra">
+                <p class="habilidades__barra--texto" >Css / Sass</p>
+                <span><p class="habilidades__barra--2"></p></span>
+            </div>
+            <div class="habilidades__barra">
+                <p class="habilidades__barra--texto">JavaScript / ECS6</p>
+                <span><p class="habilidades__barra--3"></p></span>
+            </div>
+            <div class="habilidades__barra">
+                <p class="habilidades__barra--texto">Git / GitHub / Gitlab</p>
+                <span><p class="habilidades__barra--4"></p></span>
+            </div>
+            <div class="habilidades__barra">
+                <p class="habilidades__barra--texto">Bootstrap</p>
+                <span><p class="habilidades__barra--5"></p></span>
+            </div>
+            <div class="habilidades__barra">
+                <p class="habilidades__barra--texto">React.js</p>
+                <span><p class="habilidades__barra--6"></p></span>
+            </div>
+            <div class="habilidades__barra">
+                <p class="habilidades__barra--texto">Testes</p>
+                <span><p class="habilidades__barra--7"></p></span>
+            </div>
+        </section>
+        <section id="trabalhos" class="trabalhos">
+            <h2>Trabalhos</h2>
+            <!-- CARD 1 --> 
+            <div class="container">
+            <div class=" trabalhos__conteudo">
+                <!-- IMAGEM --> 
+                <img src="imagem/clinica.png" alt="">
+                <!-- TEXTO --> 
+                <div class="trabalhos__conteudo--texto">
+                   <h3>Clinica odontologica</h3>
+                 
+                <!-- BOTAO --> 
+                   <div class=" trabalhos__conteudo--botao">
+                        <a href="https://clinicaodontologicafe.com.br/">Entrar</a>
+                   </div>
+               </div>
+           </div>
+          <!-- CARD 2 --> 
+           <div class=" trabalhos__conteudo">
+            <!-- IMAGEM -->
+                <img src="imagem/recon.png" alt="">
+             <!-- TEXTO -->     
+                <div class="trabalhos__conteudo--texto">
+                <h3>Agência de marketing</h3>
+               
+             <!-- BOTAO --> 
+                <div class=" trabalhos__conteudo--botao">
+                    <a href="">Entrar</a>
+                </div>
+            </div>
+       </div>
+    </div>
+        </section>
+        <aside id="contato" class="redes">
+            <h2>Veja mais</h2>
+            <div class="redes-sociais">
+                <a href="https://www.linkedin.com/in/frontendmarcoscaio/"> <img src="imagem/linkedin.png" alt=""></a>
+                <a href="https://github.com/DevMarcosCaio"> <img src="imagem/github.png" alt=""></a>
+               
+            </div>
+        </aside>
+    </main>
+    <footer class="rodape">
+        <span>"Aplica teu coração ao ensino e teus ouvidos às palavras que trazem conhecimento". - Provérbio 23:12</span>
+        <p>© 2022 Marcos C. All rights reserved.</p>
+    </footer>
+</div>
+    <script src="./javascript/code.js"></script>
+
+</body>
+</html>

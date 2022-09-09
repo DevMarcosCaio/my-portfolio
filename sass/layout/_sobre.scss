@@ -1,0 +1,31 @@
+/* SOBRE MIM */
+.sobre {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 2.5rem;
+
+    @media screen and (min-width: 450px) {
+        padding: 1rem 8rem;
+    } 
+
+    @media screen and (min-width: 600px) {
+        padding: 1rem 10rem;
+    } 
+
+    @media screen and (min-width: 680px) {
+        padding: 4rem 18rem;
+    } 
+
+    @media screen and (min-width: 820px) {
+        padding: 4rem 5rem;
+    } 
+
+    @media screen and (min-width: 1200px) {
+        padding: 1rem 10rem;
+    } 
+
+    @media screen and (min-width: 1300px) {
+        padding: 4rem 20rem;
+    } 
+}

@@ -1,0 +1,77 @@
+.servicos {
+    width: 100%;
+    height: auto;
+    padding: 2.5rem;
+    background-color: #000;
+    color:#fff;
+
+    @media screen and (min-width: 450px) {
+        padding: 1rem 5rem;
+    } 
+
+    @media screen and (min-width: 600px) {
+        padding: 1rem 10rem;
+    } 
+
+    @media screen and (min-width: 680px) {
+        flex-wrap: wrap;
+        padding: 1rem 16rem;
+    } 
+
+    @media screen and (min-width: 820px) {
+        flex-wrap: wrap;
+        padding: 1rem 1rem;
+    } 
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: wrap;
+        padding: 1rem 1rem;
+    } 
+
+    @media screen and (min-width: 1300px) {
+        padding: 4rem 5rem;
+    } 
+
+    .container {
+        @media screen and (min-width: 820px) {
+            display: flex;
+        } 
+    }
+
+    &__card {
+        width: 100%;
+        height: auto;
+        border: 0.2rem solid #61693a;
+        padding: 2rem; 
+        margin: 1rem 0;
+
+        
+        @media screen and (min-width: 820px) {
+            padding: 2rem;
+            margin: 0.2rem;
+        }  
+
+    }
+    
+    &__desenvolvimento, 
+    &__gestaodetrafego, 
+    &__gestaoderedes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+        img {
+            margin: 5rem;
+            max-width: 40%;
+            height: auto;
+        }
+
+        figcaption {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            text-align: center;       
+        } 
+        
+    }
+  
+}

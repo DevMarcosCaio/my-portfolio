@@ -1,0 +1,208 @@
+/* CABECALHO*/
+.hero {
+    position: relative;
+    height: 100vh;
+    //imagem HERO (imagem inicial/pequena)
+    background-image: url('../../imagem/hero-pequena.jpg');
+    background-size: cover;
+    background-position: center right;
+    color: #fff;
+    padding: 2.5rem;
+
+    //troca de imagem HERO (imagem media)
+    @media screen and (min-width: 420px) {
+        background-image: url('../../imagem/hero-media.jpg');
+       
+    }
+    @media screen and (min-width: 720px) {
+        height: 60vh;
+    } 
+    //troca de imagem HERO (imagem grande)
+    @media screen and (min-width: 1200px) {
+        background-image: url('../../imagem/hero-grande.jpg');
+        background-position: center;
+        height: 70vh;
+    } 
+/* BURGUER MENU*/
+    &__nav {
+        position: fixed;
+        cursor: pointer;
+        z-index: 100;
+        left: 80%;
+        width: 50px;
+        height: 50px;
+        
+        //navmobile (burger menu ATIVADO enquanto tela <720px)
+        @media screen and (min-width: 720px) {
+            display: none;
+        }
+        &--linha1,  &--linha2,  &--linha3 {
+            width: 3.2rem;
+            height: 0.25rem;
+            margin: .6rem;
+            border-radius: 2rem;
+            background-color: #fff;
+            transition: transform 0.4s ease-in;
+        }
+/* ANIMACAO BURGER MENU FECHANDO*/
+        .fechar &--linha1  {
+            transform: rotate(-45deg) translate(-5px,6px);
+            transition: transform 0.5s ease-in;
+        }
+        .fechar &--linha2  {
+            opacity: 0;
+        }
+        .fechar &--linha3  {
+            transition: transform 0.5s ease-in;
+            transform: rotate(45deg) translate(-5px,-6px);
+        }
+    }
+/* BURGUER MENU LISTA*/
+    &__navlist  { 
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: -100px;
+        right: 0px;
+        clip-path: circle(100px at 90% -10%);
+        background-color: #000;
+        z-index: 10;
+        transition: all 1s ease-in;
+/* ITEMS DA LISTA*/    
+        &--items {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
+            li {
+                opacity: 0;
+                margin: 2rem;
+                font-size: 2rem; 
+
+                a {
+                    color: #61693a; 
+                }  
+            }
+
+/* ITEMS DA LISTA - ANIMACAO MOBILE */  
+            li:nth-child(1) {
+              transition: all 0.5s ease 0.8s;  
+            }
+            li:nth-child(2) {
+                transition: all 0.5s ease 1.0s;
+            }
+            li:nth-child(3) {
+                transition: all 0.5s ease 1.2s; 
+            }
+
+            li:nth-child(4) {
+                transition: all 0.5s ease 1.4s; 
+            }
+
+            li:nth-child(5) {
+                transition: all 0.5s ease 1.6s; 
+            }
+
+            li.fade {
+                opacity: 1;
+            }
+        }
+    } 
+/*ANIMACAO BURGER ABRINDO*/
+    &__navlist.abrir {
+        clip-path: circle(1000px at 50% -10%);
+        top: 0; 
+        overflow: hidden; 
+    }
+
+ 
+/* NAVEGACAO DESKTOP */  
+    &__navdesktop {
+        display: none;
+
+        //navdesktop (burger menu DESATIVADO se tela >720px)
+        @media screen and (min-width: 720px) {
+            display: block;
+        }    
+    }
+    
+    &__navdesktoplist--items {
+        display: flex;
+        justify-content: center;
+
+        li a {
+            font-size: 1.6rem;
+            margin: 0.5rem;
+            padding: 1rem;
+            color: #fff;
+        }
+        
+        a:hover {
+                color:#61693a;
+            }
+    }
+/*TEXTO PRINCIPAL DESKTOP*/  
+    &__text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media screen and (min-width: 720px) {
+           h1, h2 {
+                width: 100%;
+                text-align: center;
+           }
+        }
+        span {
+            color: #61693a;
+        }
+    }
+/*SETA BAIXO MOBILE*/  
+    .setabaixo {
+        position: absolute;
+        top: 85%;
+        left: 45%;
+
+        //arrow (seta DESATIVADA se tela >720px)
+        @media screen and (min-width: 720px) {
+            display: none;
+        }
+       
+        img {
+             animation: seta 2s ease-out 0s infinite running;
+        }
+    }
+
+/*SETA BAIXO MOBILE - ANIMACAO*/      
+    @keyframes seta {
+        0% {
+            transform: translateY(10%);
+        }
+
+        25% {
+            transform: translateY(20%);
+        }
+
+        50% {
+            transform: translateY(80%);
+        }
+    }
+/*SETA CIMA DESKTOP*/     
+    .setacima {
+        display: none;
+        position: fixed;
+        cursor: pointer;
+        top: 85%;
+        left: 90%; 
+
+        //arrow (seta ATIVADA se tela >720px)
+        @media screen and (min-width: 720px) {
+            display: block;
+        }
+    }
+}
+
